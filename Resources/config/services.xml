@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+	<parameters>
+		<parameter key="fluid.class">Fluid</parameter>
+		<parameter key="fluid.loader.class">PhBergsmann\FluidBundle\Loader\FilesystemLoader</parameter>
+		<parameter key="templating.engine.fluid.class">PhBergsmann\FluidBundle\FluidEngine</parameter>
+		<parameter key="assetic.fluid_formula_loader.class">PhBergsmann\FluidBundle\Assetic\FakeFormulaLoader</parameter>
+	</parameters>
+
+	<services>
+		<service id="fluid.template_paths" class="TYPO3\Fluid\View\TemplatePaths">
+
+		</service>
+		<service id="fluid" class="TYPO3\Fluid\View\TemplateView">
+			<argument type="service" id="fluid.template_paths" />
+		</service>
+
+		<service id="fluid.loader" class="%fluid.loader.class%">
+			<argument type="service" id="templating.locator"/>
+		</service>
+
+		<service id="templating.engine.fluid" class="PhBergsmann\FluidBundle\FluidEngine" public="false">
+			<argument type="service" id="fluid"/>
+			<argument type="service" id="templating.name_parser"/>
+			<argument type="service" id="templating.loader"/>
+			<tag name="templating.engine"/>
+		</service>
+
+		<service id="assetic.fluid_formula_loader" class="%assetic.fluid_formula_loader.class%" public="false">
+			<tag name="assetic.formula_loader" alias="fluid"/>
+			<tag name="assetic.templating.fluid"/>
+		</service>
+	</services>
+</container>

@@ -1,0 +1,29 @@
+{
+    "name": "phbergsmann/fluidbundle",
+    "description": "",
+    "keywords": ["templating", "fluid", "symfony", "symfony2", "sf2"],
+    "homepage": "http://github.com/phbergsmann/fluidbundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Bergsmann",
+            "email": "p.bergsmann@opendo.at",
+            "homepage": "http://ph-bergsmann.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "typo3/fluid": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "PhBergsmann\\FluidBundle": "" }
+    },
+    "target-dir": "PhBergsmann/FluidBundle",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/NamelessCoder/TYPO3.Fluid.git"
+		}
+	]
+}
