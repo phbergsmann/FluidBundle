@@ -12,4 +12,3 @@ class FilesystemLoader extends \Symfony\Bundle\FrameworkBundle\Templating\Loader
 {
 
 }
-?>
