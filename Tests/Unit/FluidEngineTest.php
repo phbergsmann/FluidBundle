@@ -32,4 +32,3 @@ class FluidEngineTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($fluidEngine->supports('fluid'));
     }
 }
-?>
