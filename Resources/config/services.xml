@@ -12,10 +12,10 @@
 	</parameters>
 
 	<services>
-		<service id="fluid.template_paths" class="TYPO3\Fluid\View\TemplatePaths">
+		<service id="fluid.template_paths" class="NamelessCoder\Fluid\View\TemplatePaths">
 
 		</service>
-		<service id="fluid" class="TYPO3\Fluid\View\TemplateView">
+		<service id="fluid" class="NamelessCoder\Fluid\View\TemplateView">
 			<argument type="service" id="fluid.template_paths" />
 		</service>
 
