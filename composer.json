@@ -37,5 +37,6 @@
 			"type": "vcs",
 			"url": "https://github.com/NamelessCoder/TYPO3.Fluid.git"
 		}
-	]
+	],
+    "minimum-stability": "dev"
 }
