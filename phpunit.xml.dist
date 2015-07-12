@@ -14,6 +14,9 @@
         <testsuite name="unit">
             <directory suffix="Test.php">./Tests/Unit</directory>
         </testsuite>
+        <testsuite name="functional">
+            <directory suffix="Test.php">./Tests/Functional</directory>
+        </testsuite>
     </testsuites>
 
     <filter>
@@ -30,4 +33,7 @@
     <listeners>
         <listener class="\Mockery\Adapter\Phpunit\TestListener" />
     </listeners>
+    <php>
+        <server name="KERNEL_DIR" value="Tests/Functional/Fixtures/app" />
+    </php>
 </phpunit>

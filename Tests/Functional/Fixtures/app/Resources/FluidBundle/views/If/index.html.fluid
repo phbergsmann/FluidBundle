@@ -1,0 +1,7 @@
+<f:if condition="1 == 2">
+    one equals two
+</f:if>
+
+<f:if condition="3 == 3">
+    three equals three
+</f:if>

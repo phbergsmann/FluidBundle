@@ -1,0 +1,9 @@
+LAYOUT
+
+xxx
+<f:render section="section1">
+
+</f:render>
+xxx
+
+LAYOUT

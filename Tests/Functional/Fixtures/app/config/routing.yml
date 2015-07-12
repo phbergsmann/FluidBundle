@@ -1,0 +1,12 @@
+fluid:
+  path:  /fluid
+  defaults: { _controller: PhBergsmann\FluidBundle\Tests\Functional\Fixtures\Controller\FluidTemplateController::indexAction }
+  methods:  [GET]
+if:
+  path:  /fluid/if
+  defaults: { _controller: PhBergsmann\FluidBundle\Tests\Functional\Fixtures\Controller\IfController::indexAction }
+  methods:  [GET]
+layout:
+  path:  /fluid/layout
+  defaults: { _controller: PhBergsmann\FluidBundle\Tests\Functional\Fixtures\Controller\LayoutController::indexAction }
+  methods:  [GET]

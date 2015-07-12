@@ -1,0 +1,7 @@
+<f:layout name="FluidBundle:Layout:layout.html.fluid" />
+
+<f:section name="section1">
+
+I'm the section content
+
+</f:section>

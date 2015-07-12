@@ -1,1 +1,3 @@
 vendor
+coverage.clover
+Tests/Functional/Fixtures/app/cache
