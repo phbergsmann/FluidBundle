@@ -10,7 +10,8 @@ php:
 branches:
   only:
     - master
-    - /^\d+\.\d+$/
+    - develop
+    - /^feature\/\d+$/
 
 matrix:
   include:
