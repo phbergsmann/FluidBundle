@@ -68,7 +68,7 @@ class FluidEngine implements EngineInterface
      */
     public function render($name, array $parameters = array())
     {
-        $this->fluid->setTemplatePathAndFilename($this->load($name));
+        $this->fluid->getTemplatePaths()->setTemplatePathAndFilename($this->load($name));
 
         $this->fluid->assignMultiple($parameters);
 
