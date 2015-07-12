@@ -10,11 +10,11 @@ use Symfony\Component\Templating\TemplateReferenceInterface;
 class FluidEngine implements EngineInterface {
 
 	/**
-	 * @var \TYPO3\Fluid\View\TemplateView
+	 * @var \NamelessCoder\Fluid\View\TemplateView
 	 */
 	protected $fluid;
 
-	public function __construct(\TYPO3\Fluid\View\TemplateView $fluid, TemplateNameParserInterface $parser, LoaderInterface $loader)
+	public function __construct(\NamelessCoder\Fluid\View\TemplateView $fluid, TemplateNameParserInterface $parser, LoaderInterface $loader)
 	{
 		$this->fluid = $fluid;
 		$this->parser = $parser;
